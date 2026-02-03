@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika Testlari - 5-11 sinflar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Informatika Fanidan Testlar</h1>
+            <p class="subtitle">5-11 sinflar uchun sun'iy intellekt tomonidan tuzilgan testlar</p>
+        </header>
+
+        <main>
+            <div class="registration-section" id="registrationSection">
+                <h2>Kirish</h2>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="nickname">Nikname:</label>
+                        <input type="text" id="nickname" name="nickname" required placeholder="Masalan: Student2024" minlength="3" maxlength="20">
+                        <small id="nicknameError" class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Yoshi:</label>
+                        <input type="number" id="age" name="age" required min="10" max="18" placeholder="Masalan: 15">
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">Sinf:</label>
+                        <select id="grade" name="grade" required>
+                            <option value="">Sinfni tanlang</option>
+                            <option value="5">5-sinf</option>
+                            <option value="6">6-sinf</option>
+                            <option value="7">7-sinf</option>
+                            <option value="8">8-sinf</option>
+                            <option value="9">9-sinf</option>
+                            <option value="10">10-sinf</option>
+                            <option value="11">11-sinf</option>
+                        </select>
+                        <small id="ageGradeError" class="error-message"></small>
+                    </div>
+                    <button type="submit" class="btn-primary">Testni boshlash</button>
+                </form>
+            </div>
+
+            <div class="test-section hidden" id="testSection">
+                <div class="sidebar" id="sidebar">
+                    <div class="subject-section">
+                        <h3>Fanlar</h3>
+                        <ul class="subject-list">
+                            <li class="subject-item active" data-subject="informatika">
+                                <span>💻 Informatika</span>
+                            </li>
+                            <li class="subject-item" data-subject="fizika">
+                                <span>⚡ Fizika</span>
+                            </li>
+                            <li class="subject-item" data-subject="biologiya">
+                                <span>🧬 Biologiya</span>
+                            </li>
+                            <li class="subject-item" data-subject="matematika">
+                                <span>📐 Matematika</span>
+                            </li>
+                            <li class="subject-item" data-subject="kimyo">
+                                <span>⚗️ Kimyo</span>
+                            </li>
+                            <li class="subject-item" data-subject="tarix">
+                                <span>📜 Tarix</span>
+                            </li>
+                            <li class="subject-item" data-subject="geografiya">
+                                <span>🌍 Geografiya</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rating-section">
+                        <h3>🏆 Reyting <span id="ratingGradeInfo"></span></h3>
+                        <div id="ratingList" class="rating-list"></div>
+                    </div>
+                </div>
+
+                <div class="test-content">
+                    <div class="user-info">
+                        <span id="userNicknameDisplay"></span>
+                        <span id="userGradeDisplay"></span>
+                        <button class="btn-logout" id="logoutBtn">Chiqish</button>
+                    </div>
+
+                    <div class="test-container" id="testContainer">
+                        <h2 id="testTitle"></h2>
+                        <div id="questionsContainer"></div>
+                        <div class="test-actions">
+                            <button class="btn-primary" id="submitTestBtn">Javoblarni tekshirish</button>
+                        </div>
+                        <div id="resultsContainer"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="comment-section" id="commentSection">
+                <h3>Izoh qoldiring <span id="commentGradeInfo"></span></h3>
+                <div id="commentFormContainer">
+                    <textarea id="commentText" placeholder="Bu yerda izohingizni yozing..." rows="4"></textarea>
+                    <button class="btn-primary" id="submitCommentBtn">Izoh yuborish</button>
+                </div>
+                <div id="commentSubmitted" class="hidden">
+                    <p class="success-message">✅ Rahmat! Izohingiz muvaffaqiyatli yuborildi.</p>
+                </div>
+                <div id="commentsList"></div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="tests.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
