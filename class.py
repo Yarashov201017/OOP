@@ -402,14 +402,131 @@
 
 # Telefon1=Telefon("Samsung A6",3000,"3 soat",32,"200-400")
 # print(Telefon1.Phone_info())
-# 15
-class Kompaniya:
-    def __init__(self,oylik,ish_vaqti,mahsuloti):
-        self.oylik=oylik
-        self.ish_vaqti=ish_vaqti
-        self.mahsuloti=mahsuloti
-    def info(self):
-        return f"Ishchilar ortacha oyliki :{self.oylik}\nIshchilar ish vaqti :{self.ish_vaqti}\nIshchilar ishlab chiqaradigan mahsulot :{self.mahsuloti}"
+ 15
+# class Kompaniya:
+#     def __init__(self,oylik,ish_vaqti,mahsuloti):
+#         self.oylik=oylik
+#         self.ish_vaqti=ish_vaqti
+#         self.mahsuloti=mahsuloti
+#     def info(self):
+#         return f"Ishchilar ortacha oyliki :{self.oylik}\nIshchilar ish vaqti :{self.ish_vaqti}\nIshchilar ishlab chiqaradigan mahsulot :{self.mahsuloti}"
+# class Ishchi(Kompaniya):
+#     def __init__(self, oylik, ish_vaqti, mahsuloti,oylik_kotarish):
+#         super().__init__(oylik, ish_vaqti, mahsuloti)
+#         self.oylik_kotarish=oylik_kotarish
+#     def ishchilar(self):
+#         return f"{self.info()}\nIshchi oyliki kotarilishi :{self.oylik_kotarish}"
+# ishchi1=Kompaniya(120,"8:45 Dan 19:00 gacha","Gugurt\n")
+# ishchi2=Ishchi(120,"8:45 Dan 19:00 gacha","Gugurt","Bir yildan kegin 5% oshishi")
+# print(ishchi1.info())
+# print(ishchi2.ishchilar())
+# 16
+# class  shaxs:
+#     def __init__(self,ism,yoshi,pul_ishlatishi):
+#         self.ism=ism
+#         self.yosh=yoshi
+#         self.pul=pul_ishlatishi
+#     def info(self):
+#         return f"Shaxs nomi :{self.ism}\nShaxs yoshi :{self.yosh}\nShaxs haftasiga pul sarfi :{self.pul}"
+# class Oquvchi(shaxs):
+#     def __init__(self, ism, yoshi, pul_ishlatishi,sinf,fan):
+#         super().__init__(ism, yoshi, pul_ishlatishi)
+#         self.sinf=sinf
+#         self.fan=fan
+#     def oquvchi_info(self):
+#         return f"{self.info()}\nShaxs qaysi sinfda oqishi :{self.sinf}\nShaxs qaysi fani yaxshi oqishi :{self.fan}"
+# oquvchi1=Oquvchi("nodir",15,"55 000 so'm","9-A","Informatika va matematika")
+# print(oquvchi1.oquvchi_info())
+
+# 17
+# class Trasport:
+#     def __init__(self,tezlik,yoqilgi,nomi):
+#         self.tezlik=tezlik
+#         self.yoqilgi=yoqilgi
+#         self.nomi=nomi
+#     def info(self):
+#         return f"Transport nomi :{self.nomi}\nTrasmport tezliki :{self.tezlik}\nTrasport ishlatadigan yoqilgi turi :{self.yoqilgi}"
+# class Avtobus(Trasport):
+#     def __init__(self, tezlik, yoqilgi, nomi,orindiq):
+#         super().__init__(tezlik, yoqilgi, nomi)
+#         self.orindi=orindiq
+#     def avtobus_info(self):
+#         return f"{self.info()}\nTransport orindiqlar soni :{self.orindi}"
+# class Poyezd(Trasport):
+#     def __init__(self, tezlik, yoqilgi, nomi,vogonlar):
+#         super().__init__(tezlik, yoqilgi, nomi)
+#         self.vagon=vogonlar
+#     def poyezd_info(self):
+#         return f"{self.info()}\nPoyezed vagonlar :{self.vagon}"
+# poyezd1=Poyezd(350,"biliman","poyezd",20)
+# avtobus=Avtobus(80,'AI90',"Avtobus",20)
+# print(avtobus.avtobus_info())
+# print(poyezd1.poyezd_info())
+
+# 18
+# class Shaxs:
+#     def __init__(self,ism,yoshi):
+#         self.ism=ism
+#         self.yoshi=yoshi
+#     def info(self):
+#         return f"Shaxsning ismi :{self.ism}\nShaxs yoshi :{self.yoshi}"
+# class Talaba(Shaxs):
+#     def __init__(self, ism, yoshi,kursi):
+#         super().__init__(ism, yoshi)
+#         self.kursi=kursi
+#     def Talaba_info(self):
+#         return f"{self.info()}\nTalaba :{self.kursi}-kurs\n"
+# class Oqituvchi(Shaxs):
+#     def __init__(self, ism, yoshi,darslar,fani):
+#         super().__init__(ism, yoshi)
+#         self.fanlar=darslar
+#         self.fani=fani
+#     def Oqituvchi_info(self):
+#         return f"{self.info()}\nO'qituvchi necha soat dars berishi:{self.fanlar}\nO'qituvchi dars beradigan fani :{self.fani}"
+# talaba=Talaba("Botir",20,3)
+# oqituvchi=Oqituvchi("Mardon",35,"35","Kimyo")
+# print(talaba.Talaba_info())
+# print(oqituvchi.Oqituvchi_info())
+
+# 19
+# class Mahsulot:
+#     def __init__(self,nomi,ishlab,narx):
+#         self.nomi=nomi
+#         self.ishlab=ishlab
+#         self.narxi=narx
+#     def mahsulot_info(self):
+#         return f"Mahsulot nomi :{self.nomi}\nMahsulot ishlab chiqarilgan joy:{self.ishlab}\nMahsulot narxi :{self.narxi}"
+# class Meva(Mahsulot):
+#     def __init__(self, nomi, ishlab,narxi,kg):
+#         super().__init__(nomi, ishlab,narxi)
+#         self.kg=kg
+#     def meva_info(self):
+#         return f"{self.mahsulot_info()}\nBu mevadan {self.kg} kg bor"
+# meva1=Meva("Banan","chet el",20000,20)
+# mahsulot1=Mahsulot("kuluch","texnik",10000)
+# print(mahsulot1.mahsulot_info())
+# print(meva1.meva_info())
+
+# 20
+# class Bino:
+#     def __init__(self,qavat,qachon):
+#         self.qavat=qavat
+#         self.yil=qachon
+#     def Bino_info(self):
+#         return f"Bino necha qavat :{self.qavat}\nBino qachon qurulgani :{self.yil}"
+# class Uy(Bino):
+#     def __init__(self, qavat, qachon,hona,necha_kishi):
+#         super().__init__(qavat, qachon)
+#         self.xona=hona
+#         self.kishi=necha_kishi
+#     def uy_info(self):
+#         return f"{self.Bino_info()}\nUyda necha xona borligi :{self.xona}\nUyda {self.kishi} kishi yashaydi"
+# bino1=Bino(8,2019)
+# uy=Uy(1,2009,5,3)
+# print(uy.uy_info())
+# print(bino1.Bino_info())
+    
+
 
 
 
@@ -939,4 +1056,5 @@ class Kompaniya:
 
 # print("😱 3 threats found!")
 # time.sleep(2)
+
 # print("Relax 😄 This is a prank!")
