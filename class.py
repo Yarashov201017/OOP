@@ -527,6 +527,99 @@
 # print(bino1.Bino_info())
     
 
+# 20
+# class Bino:
+#     def __init__(self,qavat,qachon):
+#         self.qavat=qavat
+#         self.yil=qachon
+#     def Bino_info(self):
+#         return f"Bino necha qavat :{self.qavat}\nBino qachon qurulgani :{self.yil}"
+# class Uy(Bino):
+#     def __init__(self, qavat, qachon,hona,necha_kishi):
+#         super().__init__(qavat, qachon)
+#         self.xona=hona
+#         self.kishi=necha_kishi
+#     def uy_info(self):
+#         return f"{self.Bino_info()}\nUyda necha xona borligi :{self.xona}\nUyda {self.kishi} kishi yashaydi"
+# bino1=Bino(8,2019)
+# uy=Uy(1,2009,5,3)
+# print(uy.uy_info())
+# print(bino1.Bino_info())
+# 21
+# class Shaxs:
+#     def __init__(self,ism,yosh):
+#         self.ism=ism
+#         self.yosh=yosh
+#     def info(self):
+#         return f"shaxsning ismi :{self.ism}\nshaxsning yoshi :{self.yosh}"
+# class Ishchi(Shaxs):
+#     def __init__(self, ism, yosh,oyligi,ishi):
+#         super().__init__(ism, yosh)
+#         self.oyligi=oyligi
+#         self.ishi=ishi
+#     def ishchi_info(self):
+#         return f"{self.info()}\nShaxs ish joyi :{self.ishi}\nShaxsning oyligi :{self.oyligi} so'm\n"
+# ishchi1=Ishchi("Botir",30,5000000,"acfa")
+# shaxs=Shaxs("botir",15)
+# print(ishchi1.ishchi_info())
+# print(shaxs.info())
+
+# 22
+# class Kitob:
+#     def __init__(self,sahifa,mualif,narxi):
+#         self.sahifa=sahifa
+#         self.muallif=mualif
+#         self.narxi=narxi
+#     def info(self):
+#         return f"Kitob muallifi :{self.muallif}\nKitob sahifalar soni :{self.sahifa}\nBu kitob narxi :{self.narxi}"
+# class Elektron_kitob(Kitob):
+#     def __init__(self, sahifa, mualif, narxi,web):
+#         super().__init__(sahifa, mualif, narxi)
+#         self.web=web
+#     def elektron_kitob(self):
+#         return f"{self.info()}\nUshbu kitob {self.web} saytidan olingan\nBu kitob narxi :{self.narxi}\n"
+# kitob=Kitob(250,"men",15000)
+# kitob2=Elektron_kitob(250,"men",5000,"Kitoblar olami")
+# print(kitob2.elektron_kitob())
+# print(kitob.info())
+
+# 23
+# class Mashina:
+#     def __init__(self,rang,model,narxi):
+#         self.rang=rang
+#         self.model=model
+#         self.narx=narxi
+#     def info(self):
+#         return f"Mashina modeli :{self.model}\nMashina rangi :{self.rang}\nMashina narxi :{self.narx} $"
+# class Elektr_avto(Mashina):
+#     def __init__(self, rang, model, narxi,bater_km):
+#         super().__init__(rang, model, narxi)
+#         self.baterka_km=bater_km
+#     def _info(self):
+#         return f"{self.info()}\nMashina baterekasi 100% da {self.baterka_km} km yuradi\n"
+# elektr_avto=Elektr_avto("qora","Mers",75000,69800)
+# mashina=Mashina("sariq","matiz",5000)
+# print(elektr_avto._info())
+# print(mashina.info())
+
+# 24
+# class Kitob:
+#     def __init__(self,nomi,beti,sana,mualif):
+#         self.sahifa=beti
+#         self.sana=sana
+#         self.nomi=nomi
+#         self.mualif=mualif
+#     def info(self):
+#         return f"Kitob nomi :{self.nomi}\nkitob bosilib chiqishi :{self.sana}\nKitob mualifi :{self.mualif}"
+# class kitob(Kitob):
+#     def __init__(self, nomi, beti, sana, mualif):
+#         super().__init__(nomi, beti, sana, mualif)
+#     def info(self):
+#         return f"Kitob mualifi :{self.mualif}\nKitob nomi :{self.nomi}\nkitob bosilib chiqishi :{self.sana}\n"
+# kitob2=kitob("bir kun",200,2009,"biliman")
+# print(kitob2.info())
+# Kitob1=Kitob("bir kun",200,2009,"biliman")
+# print(Kitob1.info())
 
 
 
@@ -1058,3 +1151,4 @@
 # time.sleep(2)
 
 # print("Relax 😄 This is a prank!")
+
