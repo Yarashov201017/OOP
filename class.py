@@ -620,7 +620,34 @@
 # print(kitob2.info())
 # Kitob1=Kitob("bir kun",200,2009,"biliman")
 # print(Kitob1.info())
-
+# 26
+#class Maktab:
+#    def __init__(self,oquvchilar,ustozlar,mk_nomi):
+#        self.oquvchilar=oquvchilar
+#        self.ustozlar=ustozlar
+#        self.maktab_nomi=mk_nomi
+#    def info(self):
+#        return f"Maktab nomi :{self.maktab_nomi}\n/Maktab ustozlar soni :{self.ustozlar}\nMaktabdagi Oquvchilar soni :{self.oquvchilar}"
+#class sinf(Maktab):
+#    def __init__(self, oquvchilar, ustozlar, mk_nomi,xona_raqam,sinf_shiori):
+#        super().__init__(oquvchilar, ustozlar, mk_nomi)
+#        self.xona=xona_raqam
+#        self.shior=sinf_shiori
+#        self.royhat=[
+#            "Ali Karimov","Bekzod Tursunov",
+#            "Diyorbek Rahmonov","Jasur Alimuhamedov","Sardor Qodirov",
+#            "Azizbek Islomov","Shohruh Ergashev","Muhammadali Sobirov",
+#            "Ziyodulla Xolmatov","Kamronbek Yo‘ldoshev","Madina Karimova",
+#            "Dilnoza Tursunova","Mohira Rahmonova","Aziza Alimuhamedova",
+#            "Shaxnoza Qodirova","Sevara Islomova","Nilufar Ergasheva",
+#            "Maftuna Sobirova","Rayhona Xolmatova","Zuhra Yo‘ldosheva"
+#        ]
+#    def sinf_info(self):
+#        return f"{self.info()}\nSinf xonadagi o'quvchilar ism familyalari :{self.royhat}\nSinf shiori :{self.shior}"
+#sinf1=sinf(20,"palankaslar","15-mkatba",205,"izlan va olg'a bor")
+#print(sinf1)
+#mk=Maktab(1000,"palankaslar","19-maktab")
+#print(mk)
 
 
 
@@ -1151,4 +1178,5 @@
 # time.sleep(2)
 
 # print("Relax 😄 This is a prank!")
+
 
