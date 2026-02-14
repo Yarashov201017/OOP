@@ -649,6 +649,38 @@
 #mk=Maktab(1000,"palankaslar","19-maktab")
 #print(mk)
 
+# 27
+# class Avto:
+#     def __init__(self,model,color,price):
+#         self.model=model
+#         self.color=color
+#         self.price=price
+        
+#     def oddiy_car(self):
+#         return f"Avtomobil nomi :{self.model}\n{self.model} rangi {self.color}\n{self.model} narxi {self.price} $"
+    
+# class Mercedes(Avto):
+#     def __init__(self, model, color, price,akimyator):
+#         super().__init__(model, color, price)
+#         self.bateraka_km=akimyator
+        
+#     def merc(self):
+#         return f"{self.oddiy_car()}\n{self.model} bateraka(100% da) {self.bateraka_km} km ga yetadi\n"
+    
+# class Chevrolet(Avto):
+#     def __init__(self, model, color, price,zavod):
+#         super().__init__(model, color, price)
+#         self.zavod=zavod
+
+#     def chevr(self):
+#         return f"{self.oddiy_car()}\n{self.model}-{self.zavod} devlatda ishlab chiqadi\n"
+    
+# merc1=Mercedes('Amg63',"oq",120000,10_000)
+# print(merc1.merc())
+# chevr1=Chevrolet("Chevrolet","qora",10000,16)
+# print()
+# avto1=Avto('Damas',"yashil",9000)
+# print(avto1.oddiy_car())
 
 
 
@@ -1178,5 +1210,6 @@
 # time.sleep(2)
 
 # print("Relax 😄 This is a prank!")
+
 
 
