@@ -682,6 +682,64 @@
 # avto1=Avto('Damas',"yashil",9000)
 # print(avto1.oddiy_car())
 
+# 28
+
+# class Texnika:
+#     def __init__(self,nomi,narx):
+#         self.name=nomi
+#         self.price=narx
+#     def info(self):
+#         return f"Texnika nomi :{self.name}\n{self.name} ning narxi :{self.price}"
+
+# class Printer(Texnika):
+#     def __init__(self, nomi, narx,necha_xil):
+#         super().__init__(nomi, narx)
+#         self.rang=necha_xil
+#     def  printer(self):
+#         return f"{self.info}\n{self.name} {self.rang} da chiqara oladi"
+
+# class Skaner(Texnika):
+#     def __init__(self, nomi, narx,):
+#         super().__init__(nomi, narx)          ustozdan sorash
+
+
+# 29
+
+# class Sportchi:
+#     def __init__(self,ismi,yoshi,yutuq,sport_turi):
+#         self.name=ismi
+#         self.age=yoshi
+#         self.yutuqlari=yutuq
+#         self.sport_turi=sport_turi
+#     def _info(self):
+#         return f"sportchi ismi :{self.name}\n{self.name} yoshi :{self.age}\n{self.name} oynaydigan sport turi :{self.sport_turi}\n{self.name}ning yutuqlari :{self.yutuqlari}"
+# sprotchi1=Sportchi("yoqubboy",16,"yoq","tennis")
+# print(sprotchi1._info())
+# class Fudbolchi(Sportchi):
+#     def __init__(self, ismi, yoshi, qubuki, sport_turi,Gol_soni,asosiy_oynaydi):
+#         super().__init__(ismi, yoshi, qubuki, sport_turi)
+#         self.Gol_soni=Gol_soni
+#         self.asosiy_oynaydigan=asosiy_oynaydi
+#     def fudbalist(self):
+#         return f"{self._info()}\n{self.name} urgan gollari :{self.Gol_soni}\n{self.name} asosiy oynaydigan joyi :{self.asosiy_oynaydigan}"
+# fudbolchi1=Fudbolchi("Valijon",16,5,"fudbol",10,"senter")
+# print(fudbolchi1.fudbalist())
+
+# 30
+
+# class Student:
+#     def __init__(self,ismi,yoshi):
+#         self.name=ismi
+#         self.age=yoshi
+#     def info(self):
+#         return f"Student {self.name}\n{self.age}"
+# class Talaba(Student):
+#     def __init__(self, ismi, yoshi,data):
+#         super().__init__(ismi, yoshi)
+#         self.data=data
+#     def __info(self):
+#         return f"{self.info()}\n{self.name} tug'ilgan {self.data}"
+
 
 
 
@@ -1210,6 +1268,7 @@
 # time.sleep(2)
 
 # print("Relax 😄 This is a prank!")
+
 
 
 
