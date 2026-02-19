@@ -740,6 +740,105 @@
 #     def __info(self):
 #         return f"{self.info()}\n{self.name} tug'ilgan {self.data}"
 
+# 31
+# class Qurulma:
+#     def __init__(self,nomi,narx):
+#         self.narx=narx
+#         self.nomi=nomi
+#     def info(self):
+#         return f"Qurulma nomi :{self.nomi}\n{self.nomi} ning narxi :{self.narx} so'm"
+    
+# class Telefon(Qurulma):
+#     def __init__(self, nomi, narx,batereykasi,xotira,camerasi):
+#         super().__init__(nomi, narx)
+#         self.bater=batereykasi
+#         self.xt=xotira
+#         self.cm=camerasi
+#     def tel_info(self):   
+#         return f"{self.info()}\n{self.nomi} telefoni {self.bater} Amper \n{self.nomi} telefoni xotirasi {self.xt} gb(yoki Terabeyt) \n{self.nomi} telefon camerasi {self.cm} mega px\n"
+# tel1=Telefon("A36",2500000,5000,128,38)
+# print(tel1.tel_info())
+# qurulma1=Qurulma("gugurt",5000)
+# print(qurulma1.info())
+#  32
+# class Inson:
+#     def __init__(self,ism,yosh):
+#         self.name=ism
+#         self.age=yosh
+#     def info(self):
+#         return f"Insoning ismi :{self.name}\n{self.name} ning yoshi :{self.age}"   
+    
+# class Student(Inson):
+#     def __init__(self, ism, yosh,yonalishi,spendiya):
+#         super().__init__(ism, yosh)
+#         self.yonaslish=yonalishi
+#         self.spendiya=spendiya
+#     def student_info(self):
+#         return f"{self.info()}\n{self.name} ning yonalishi :{self.yonaslish}\n{self.name} ning spendiya puli {self.spendiya}"
+    
+# 34
+# class Texnika:
+#     def __init__(self,nomi,garantiya,narxi):
+#         self.nomi=nomi
+#         self.garant=garantiya
+#         self.price=narxi
+#     def texnika(self):
+#         return f"Texnika nomi:{self.nomi}\n{self.nomi} garantiya :{self.garant} yili\n{self.nomi} narxi :{self.price} $"
+# class Telefon(Texnika):
+#     def __init__(self, nomi, garantiya, narxi,ekron,camerasi):
+#         super().__init__(nomi, garantiya, narxi)
+#         self.ekran=ekron
+#         self.camera=camerasi
+#     def telefonlar(self):
+#         return f"{self.texnika()}\nEkran duyumi{self.ekran}\n{self.nomi} ning camerasi {self.camera} mega px"
+# telefon=Telefon("A6",1,500000,"246-495",11)
+# print(telefon.telefonlar())
+# 35
+# class Hayvon:
+#     def __init__(self,nomi,yosh,narx):
+#         self.nomi=nomi
+#         self.yosh=yosh
+#         self.narx=narx
+    
+#     def info(self):
+#         return f"Hayvon nomi {self.nomi}\n{self.nomi} uni yoshi {self.yosh}\n{self.nomi} narxi :{self.narx}"
+# class Mushuk(Hayvon):
+#     def __init__(self, nomi, yosh, narx,ism):
+#         super().__init__(nomi, yosh, narx)
+#         self.laqab=ism
+#     def mushuk_info(self):    
+#         return f"{self.info()}\nMUshukning ismi :{self.laqab}\n"
+# class Baliq(Hayvon):
+#     def __init__(self, nomi, yosh, narx,turi,yashash_joy):
+#         super().__init__(nomi, yosh, narx)
+#         self.turi=turi
+#         self.yashash=yashash_joy
+#     def baliq(self):
+#         return f"{self.info()}\nBaliq turi :{self.turi}\nBaliq yashaydigan joyi :{self.yashash}"
+# mushuk1=Mushuk("mushuk",5,500,"kalta")
+# print(mushuk1.mushuk_info())
+# baliqlar=Baliq("Sazon",2,25000,"qilchiqsiz","xonaki")
+# print(baliqlar.baliq())
+    
+# 36
+# class Kampaniya:
+#     def __init__(self,nomi,oylik,ish_vaqt):
+#         self.kampaniya_nomi=nomi
+#         self.oylik=oylik
+#         self.ish_vaqt=ish_vaqt
+    
+#     def kampaniya(self):
+#         return f"Kampaniya nomi :{self.kampaniya_nomi}\nKampaniya ortacha oylik :{self.oylik}\nKampaniya ish vaqti :{self.ish_vaqt}"
+
+# class IT_kampaniya(Kampaniya):
+#     def __init__(self, nomi, oylik, ish_vaqt,oquvchilar):
+#         super().__init__(nomi, oylik, ish_vaqt)
+#         self.oquvchilar=oquvchilar
+    
+#     def it_kampaniya(self):
+#         return f"{self.kampaniya()}\nITda oqiydigan oquvchilar soni :{self.oquvchilar}"
+# it_kampaniya1=IT_kampaniya("IT_park",500,"8.00-20.00")    
+# print(it_kampaniya1.it_kampaniya())
 
 
 
@@ -1268,6 +1367,7 @@
 # time.sleep(2)
 
 # print("Relax 😄 This is a prank!")
+
 
 
 
