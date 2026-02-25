@@ -840,6 +840,87 @@
 # it_kampaniya1=IT_kampaniya("IT_park",500,"8.00-20.00")    
 # print(it_kampaniya1.it_kampaniya())
 
+# 37
+# class Mahsulot:
+#     def init(self,nomi,narxi):
+#         self.name=nomi
+#         self.price=narxi
+#     def info(self):
+#         return f"Mahsulot nomi :{self.name}\n{self.name} ning narxi :{self.price} so‘m"
+# mahsulot1=Mahsulot("Qamera",350000)
+# print(mahsulot1.info())
+# class Ichimlik(Mahsulot):
+#     def init(self, nomi, narxi,shakar):
+#         super().init(nomi, narxi)
+#         self.shakar=shakar
+#     def ichimlik(self):
+#         return f"{self.info()}\n{self.name} ga {self.shakar} gr shakar qoshilgan"
+# ichimlik1=Ichimlik("Coca-cola",11000,100)
+# print(ichimlik1.ichimlik())
+        
+# 38
+# class Uskuna:
+#     def init(self,nomi,narxi):
+#         self.name=nomi
+#         self.price=narxi
+#     def Uskuna_info(self):
+#         return f"Mahsulot nomi :{self.name}\n{self.name} ning narxi :{self.price} so‘m"
+# uskuna1=Uskuna("Klaviatura",99000)
+# print(uskuna1.Uskuna_info())
+# class Tv(Uskuna):
+#     def init(self, nomi, narxi,ekrani,garant,tok):
+#         super().init(nomi, narxi)
+#         self.ekran=ekrani
+#         self.garantiya=garant
+#         self.tok=tok
+#     def televizor(self):
+#         return f"{self.Uskuna_info()}\n{self.name} ning ekran olchami :{self.ekran} dyuym\n{self.name} ning garantiya {self.garantiya}-yil\n{self.name} 1-soatda {self.tok} ishlatadi."
+# tw=Tv("Smart TV",3500000,42,3,"90–120 Vt")
+# print(tw.televizor())
+
+# 39
+# class Avto:
+#     def init(self, model, yil, narx):
+#         self.model = model
+#         self.yil = yil
+#         self.narx = narx
+#     def Avto_info(self):
+#         return f"Avtomobil modeli :{self.model}\nIshlab chiqarilgan sanasi :{self.yil}\n{self.model} ning narxi :{self.narx}"
+
+# class Elektromobil(Avto):
+#     def init(self, model, yil, narx,batereya_hajmi):
+#         super().init(model, yil, narx)
+#         self.batareya=batereya_hajmi
+#     def Elektrmobillar(self):
+#         return f"{self.Avto_info()}\n{self.model} ning batareyka hajmi :{self.batareya} km yetadi"
+# tesla = Elektromobil("Tesla",2023, 50000, 1000)
+# print(tesla.Elektrmobillar())
+
+# 40
+# class Maktab:
+#     def int(self,name):
+#         self.name=name
+        
+#     def mk_info(self):
+#         return f"Maktab nomi :{self.name}"
+#     class Shaxs:
+#         def init(self,ism,yosh):
+#             self.ism=ism
+#             self.yosh=yosh
+#         def SHaxs(self):
+#             return f"Shaxsning ismi :{self.ism}\n{self.ism} ning yoshi :{self.yosh}"
+#     class Talaba(Shaxs):
+#         def init(self, ism, yosh,spendiya,kurs):
+#             super().init(ism, yosh)
+#             self.talaba_royhat=[]
+#             self.spendiya=spendiya
+#             self.kurs=kurs
+#         def talaba_info(self):
+#             return f"{self.SHaxs}\n{self.ism}, {self.kurs} kursda oqiydi \n{self.ism} ning spendiya puli :{self.spendiya} so‘m"
+#         def add_talaba(self,ism,yosh):
+#             self.talaba_royhat.append(ism,yosh)
+#         def show_talaba(self):
+#             return {self.talaba_royhat}
 
 
 
@@ -1367,6 +1448,7 @@
 # time.sleep(2)
 
 # print("Relax 😄 This is a prank!")
+
 
 
 
