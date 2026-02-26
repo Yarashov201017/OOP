@@ -922,7 +922,64 @@
 #         def show_talaba(self):
 #             return {self.talaba_royhat}
 
+# 41
+# class Inson:
+#     def __init__(self,ism,yosh,tel):
+#         self.name=ism
+#         self.age=yosh
+#         self.tel=tel
+#     def info(self):
+#         return f"Inson ismi :{self.name}\n{self.name} ning yoshi :{self.age}\n{self.name}ning telefon raqami :{self.tel}"
+# inson1=Inson("Vali",15,"+998974561213")
+# print(inson1.info())
+# class Shifokor(Inson):
+#     def __init__(self, ism, yosh, tel,oyligi,ishi):
+#         super().__init__(ism, yosh, tel)
+#         self.oyligi=oyligi
+#         self.ishi=ishi
+#     def shifokorlar(self):
+#         return f"{self.info()}\n{self.name}ning oyligi :{self.oyligi}\n{self.name} Shifoxonada {self.ishi} bo'lib ishlaydi"
 
+# doktor=Shifokor("Yoqubboy",35,"+998971201515",500,"Urolog ")
+# print(doktor.shifokorlar())
+
+# 42
+# class Kitob:
+#     def __init__(self,kitob_nomi,mualif,narx):
+#         self.nomi=kitob_nomi
+#         self.mualif=mualif
+#         self.narx=narx
+#     def kitob_info(self):
+#         return f"Kitob nomi :{self.nomi}\n{self.nomi}ning mualifi :{self.mualif}\n{self.nomi}ning narxi :{self.narx} so'm"
+# class Audio(Kitob):
+#     def __init__(self, kitob_nomi, mualif, narx,ovoz_bergan,audio_vaqti):
+#         super().__init__(kitob_nomi, mualif, narx)
+#         self.ovoz=ovoz_bergan
+#         self.audio_vaqt=audio_vaqti
+#     def Audoi_kitob(self):
+#         return f"{self.kitob_info()}\n{self.nomi}-ga ovoz bergan odam :{self.ovoz}\n{self.nomi} ning audio vaqti :{self.audio_vaqt}\n"
+# kitob1=Kitob("Qizil Qalpoqcha","Charles Perrault",55000)
+# audio1=Audio("Qizil Qalpoqcha","Charles Perrault",5000,"Anne Hathaway","45-daqiqa")
+# print(audio1.Audoi_kitob())
+# print(kitob1.kitob_info())
+
+# 43
+# class Qurulma:
+#     def __init__(self,nomi,narxi):
+#         self.nomi=nomi
+#         self.narxi=narxi
+#     def info(self):
+#         return f"Qurulma nomi :{self.nomi}\n{self.nomi}ning narxi :{self.narxi}"
+# class SmartWatch(Qurulma):
+#     def __init__(self, nomi, narxi,zaryad,sim):
+#         super().__init__(nomi, narxi)
+#         self.zaryad=zaryad
+#         self.simkard=sim
+#     def smartwatch(self):
+#         return f"{self.info()}\nSmartWatch :{self.zaryad} Saotga yetadi\nSmartWatch SimKarta  Bor/Yo'q :{self.simkard}"
+# qurulma1=Qurulma("Telefon","5000000")
+# print(qurulma1.info())
+  
 
 
 
@@ -1448,6 +1505,7 @@
 # time.sleep(2)
 
 # print("Relax 😄 This is a prank!")
+
 
 
 
