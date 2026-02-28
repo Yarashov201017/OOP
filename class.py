@@ -980,7 +980,104 @@
 # qurulma1=Qurulma("Telefon","5000000")
 # print(qurulma1.info())
   
+# 44
 
+# class Sportchi:
+#     def __init__(self,ismi,yoshi,qubuklar_soni):
+#         self.ism=ismi
+#         self.qubuklar=qubuklar_soni
+#         self.age=yoshi
+#     def sportchilar(self):
+#         return f"Sportchi ismi :{self.ism}\n{self.ism} ning yoshi :{self.age}\n{self.ism} ning qubuklar soni :{self.qubuklar}"
+
+# class Basketbolchi(Sportchi):
+#     def __init__(self, ismi, yoshi, qubuklar_soni,savatga_tushgan_top,sakrash_m):
+#         super().__init__(ismi, yoshi, qubuklar_soni)
+#         self.savat_top=savatga_tushgan_top
+#         self.sakrashi=sakrash_m
+#     def basbetbolchilar(self):
+#         return f"{self.sportchilar()}\n{self.ism}ning tepaga sakrashi :{self.sakrashi} metr\n{self.ism}ning savatga tushurgan toplari :{self.savat_top}"
+
+# class Futbolchi(Sportchi):
+#     def __init__(self, ismi, yoshi, qubuki,Gol_soni,asosiy_oynaydi):
+#         super().__init__(ismi, yoshi, qubuki)
+#         self.gol_soni=Gol_soni
+#         self.asosiy=asosiy_oynaydi
+#     def fudbolchilar(self):
+#         return f"{self.sportchilar()}\n{self.ism} urgan gollar soni :{self.gol_soni}\n{self.ism}ning asosiy o'ynaydigan burchaki :{self.asosiy}"
+# sport1=Sportchi("Yoqubboy",22,1)
+# basketbol1=Basketbolchi("Anvar",26,5,45,1.61)
+# fudblochi1=Futbolchi("Valijon",16,9,29,"markaz")
+# print(sport1.sportchilar(),"\n")
+# print(basketbol1.basbetbolchilar(),"\n")
+# print(fudblochi1.fudbolchilar(),'\n')
+
+# 46
+# class Hayvon:
+#     def __init__(self,nomi,tur):
+#         self.nomi=nomi
+#         self.tur=tur
+#     def hayvonlar(self):
+#         return f"Hayvonning nomi :{self.nomi}\n{self.nomi} ning turlari :{self.tur} xil"
+# class Ot(Hayvon):
+#     def __init__(self, nomi, tur,tezligi,rangi):
+#         super().__init__(nomi, tur)
+#         self.tezligi=tezligi
+#         self.rangi=rangi
+#     def otlar(self):
+#         return f"{self.hayvonlar()}\nOt ning tezligi :{self.tezligi}\nOtning rangi :{self.rangi}"    
+# hayvon1=Hayvon("Baliq",30)
+# ot1=Ot("labap",25,"40/soat","jigar rang\n")
+# print(ot1.otlar())
+# print(hayvon1.hayvonlar())
+
+# 47
+# class Mashina:
+#     def __init__(self,model,yili):
+#         self.model=model
+#         self.yil=yili
+#     def mashina_info(self):
+#         return f"mashina modeli :{self.model}\n{self.model}ning yili :{self.yil}"
+# class Yengil_mashin(Mashina):
+#     def __init__(self, model, yili,odam_sigimi,tezlik):
+#         super().__init__(model, yili)
+#         self.odam_sigim=odam_sigimi
+#         self.tezlik=tezlik
+#     def yengil_mashina(self):
+#         return f"{self.mashina_info()}\n{self.model}ga {self.odam_sigim} odam sig'adi\n{self.model}ning tezligi :{self.tezlik} km"
+# class Yuk_mashinasi(Mashina):
+#     def __init__(self, model, yili,tezlik,yuk_kotarishi):
+#         super().__init__(model, yili)
+#         self.tezlik=tezlik
+#         self.yuk=yuk_kotarishi
+#     def yuk_mashin(self):
+#         return f"{self.mashina_info()}\n{self.model}ning tezligi :{self.tezlik} km\n{self.model}ning yuk kotarishi :{self.yuk} tona"
+# mashin1=Mashina("Nexia",2012)
+# yengil_mashin1=Yengil_mashin("Damas",2016,"11 ta",120)
+# yuk_mashinasi1=Yuk_mashinasi("Qamaz",2009,80,12)
+# print(mashin1.mashina_info(),"\n")
+# print(yengil_mashin1.yengil_mashina(),"\n")
+# print(yuk_mashinasi1.yuk_mashin(),'\n')
+
+# 48
+# class Shaxs:
+#     def __init__(self,ism,yoshi):
+#         self.ism=ism
+#         self.yoshi=yoshi
+#     def info(self):
+#         return f"Shaxsning ismi :{self.ism}\n{self.ism}ning yoshi :{self.yoshi}"
+# class Dasturchi(Shaxs):
+#     def __init__(self, ism, yoshi,biladigan_dasturlari,notebook_nomi):
+#         super().__init__(ism, yoshi)
+#         self.dasturlar=biladigan_dasturlari
+#         self.notbook=notebook_nomi
+#     def dasturchilar(self):
+#         return f"{self.info()}\n{self.ism} biladigan dasturlash tillari :{self.dasturlar}\n{self.ism}ning notebook nomi :{self.notbook}"        
+
+# shaxs1=Shaxs("Yoqubboy",15)
+# dasturchi1=Dasturchi("Ulug'bek",16,"py,html,css,js","Inter core 7 ultra")
+# print(shaxs1.info(),"\n")
+# print(dasturchi1.dasturchilar())
 
 
 
@@ -1505,6 +1602,7 @@
 # time.sleep(2)
 
 # print("Relax 😄 This is a prank!")
+
 
 
 
